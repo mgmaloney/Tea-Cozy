@@ -1,0 +1,24 @@
+* {
+    /* background-color: black; */
+    box-sizing: border-box;
+}
+
+.missiondiv {
+    height: 700px;
+    width: 1200px;
+
+}
+
+#missionimage {
+    opacity: .8;
+    position: relative;
+    z-index: 1;
+}
+
+.missionmessage {
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    color: lightgrey
+}
+
