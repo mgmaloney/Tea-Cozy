@@ -1,24 +1,121 @@
 * {
-    /* background-color: black; */
+    background-color: black;
     box-sizing: border-box;
+    font-family: helvetica;
+    font-size: 22px;
+    color:seashell;
+
 }
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    top: 0px;
+    border-bottom: 1px solid seashell;
+}
+
+.navlist {
+    align-items: center;
+    margin: 10px;
+    opacity: .9;
+}
+
+.navitem {
+    display: inline-flex;
+    padding: 10px;
+}
+
+#logoimage {
+    height: 50px;
+    opacity: .6;
+}
+
 
 .missiondiv {
     height: 700px;
     width: 1200px;
-
-}
-
-#missionimage {
-    opacity: .8;
-    position: relative;
+    background-image: url('/images/img-mission-background.jpg');
+    opacity: .5;
     z-index: 1;
+
 }
 
 .missionmessage {
-    position: absolute;
-    z-index: 2;
     background-color: black;
-    color: lightgrey
+    color: seashell;
+    z-index: 2;
+    position: relative;
+    top: 300px;
+    text-align: center;
+    vertical-align: middle;
+    height: 90px;
 }
 
+
+.missionbox {
+    display: flex;
+}
+
+.sectionheader {
+    font-size: 26px;
+}
+
+.teaofthemonth {
+    text-align: center;
+    margin: 10px
+}
+
+.monthitemsbox {
+    /* display: inline-flex */
+    width: 1000px;
+    text-align: center;
+}
+
+.monthitem {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.monthimage {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.monthtext {
+
+}
+
+
+.locationssection {
+    background-image: url('/images/img-locations-background.jpg');
+    height: 500px;
+    opacity: .5;
+    z-index: 1;
+
+}
+
+#locationheader {
+    text-align: center;
+    background-color: none;
+}
+
+.locationsbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.locationsitem {
+    text-align: center;
+    width: 300px;
+    z-index: 5;
+}
