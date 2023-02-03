@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: helvetica;
     font-size: 22px;
-    color:seashell;
+    color: seashell;
 
 }
 
@@ -32,48 +32,49 @@ nav {
 
 #logoimage {
     height: 50px;
-    opacity: .6;
+    opacity: .9;
 }
 
 
 .missiondiv {
     height: 700px;
-    width: 1200px;
+    width: 100%;
     background-image: url('/images/img-mission-background.jpg');
     opacity: .5;
     z-index: 1;
-
 }
 
 .missionmessage {
     background-color: black;
-    color: seashell;
-    z-index: 2;
     position: relative;
     top: 300px;
     text-align: center;
     vertical-align: middle;
     height: 90px;
-}
 
+}
 
 .missionbox {
     display: flex;
 }
 
 .sectionheader {
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .teaofthemonth {
     text-align: center;
-    margin: 10px
+    margin: 10px;
+    opacity: .5;
 }
 
 .monthitemsbox {
-    /* display: inline-flex */
-    width: 1000px;
+    width: 100%
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .monthitem {
@@ -82,17 +83,16 @@ nav {
     align-items: center;
     justify-content: center;
     margin: 5px;
+    position: relative;
 }
+
 
 .monthimage {
-    max-width: 300px;
-    max-height: 200px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10%;
 }
-
-.monthtext {
-
-}
-
 
 .locationssection {
     background-image: url('/images/img-locations-background.jpg');
@@ -104,7 +104,12 @@ nav {
 
 #locationheader {
     text-align: center;
-    background-color: none;
+    background-color: transparent;
+    position: relative;
+    top: 30px;
+    font-weight: 700;
+    color: seashell;
+    opacity: 1;
 }
 
 .locationsbox {
@@ -112,10 +117,33 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
 }
 
 .locationsitem {
     text-align: center;
     width: 300px;
-    z-index: 5;
+    height: 300px;
+    margin: 20px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.locationname {
+    font-weight: 800;
+
+}
+
+.contact {
+    text-align: center;
+    opacity: .5;
+}
+
+.copyright {
+    opacity: .5;
+    font-size: 12px;
 }
